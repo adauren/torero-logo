@@ -3,30 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Лого за 40 000</title>
   </head>
-  <body>
-    <header class="header">
+  <body id="body">
+    <header class="header" id="header" data-scroll-header> 
       <div class="container">
         <div class="header_inner">
           <div class="logo_box">
-            <img src="img/logo.png" alt="" class="logo">
+            <img src="img/logo.png" alt="" class="logo" />
           </div>
           <nav class="nav">
             <ul class="nav_list">
-              <li class="nav_item">Главная</li>
-              <li class="nav_item">Услуги Акции</li>
-              <li class="nav_item">О Компании</li>
-              <li class="nav_item">Портфолио</li>
+              <li class="nav_item"><a href="#about">О Компании</a></li>
+              <li class="nav_item" id="conditions_menu"><a href="#conditions">Условия Акции</a></li>
+              <li class="nav_item" id="portfolio_menu"><a href="#portfolio">Портфолио</a></li>
+              <li class="nav_item" id="contacts_menu"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
 
-          <div class="hamburger">
-            <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"/></svg>
+          <div class="hamburger" id="hamburger">
+            <svg
+              fill="#000000"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            >
+              <path
+                d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z"
+              />
+            </svg>
           </div>
+
+            <div class="mobile_menu">
+              <img src="img/close_icon.png" class="close" id="close" alt="">
+              <ul class="mobile_menu_list">
+                <li class="mobile_menu_item"><a href="#about">О Компании</a></li>
+                <li class="mobile_menu_item"><a href="#conditions">Условия Акции</a></li>
+                <li class="mobile_menu_item"><a href="#portfolio">Портфолио</a></li>
+                <li class="mobile_menu_item"><a href="#contacts">Контакты</a></li>
+                <li class="mobile_menu_item mobile_contacts">        
+                  <p>glavbrend@inbox.ru</p>
+                  <p>проспект Тауке Хана,<br> 63, 2 этаж</p>
+                  <a href="tel:+77079352216" class="tel mobile_tel">+77079352216</a>
+                </li>
+              </ul>
+            </div>
+
         </div>
       </div>
     </header>
@@ -36,26 +65,39 @@
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="banner_inner">
-              <img src="img/banner.png" alt="" class="banner_img">
+              <img src="img/banner.png" alt="" class="banner_img" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about_head">
           <h1 class="about_heading">
-            <span class="about_heading_top">Глав<img src="img/glav-icon.png" alt=""></span>
-            <span class="about_heading_bottom">Бренд<span class="about_heading_deseign">Дизайн</span></span>
+            <span class="about_heading_top"
+              >Глав<img src="img/glav-icon.png" alt=""
+            /></span>
+            <span class="about_heading_bottom"
+              >Бренд<span class="about_heading_deseign">Дизайн</span></span
+            >
           </h1>
         </div>
 
         <div class="about_text">
-          <p class="about_text_paragraph">Компания ГЛАВБРЕНД выполняла работы для студии Федора Бондарчука ART PICTURES, мы работаем с брендом VOLKSWAGEN, создали фирменный стиль для национальной компании СПК «Туркестан», авиакомпании Southern Sky, десятков заводов, фабрик и корпораций.</p>
-          <p class="about_text_paragraph">Однако для малого и среднего бизнеса зачастую масштабных дизайнерских разработок не 
-            требуется, поэтому мы решили представить особую услугу - быстрая, но при этом качественная разработка логотипов.</p>
+          <p class="about_text_paragraph">
+            Компания ГЛАВБРЕНД выполняла работы для студии Федора Бондарчука ART
+            PICTURES, мы работаем с брендом VOLKSWAGEN, создали фирменный стиль
+            для национальной компании СПК «Туркестан», авиакомпании Southern
+            Sky, десятков заводов, фабрик и корпораций.
+          </p>
+          <p class="about_text_paragraph">
+            Однако для малого и среднего бизнеса зачастую масштабных
+            дизайнерских разработок не требуется, поэтому мы решили представить
+            особую услугу - быстрая, но при этом качественная разработка
+            логотипов.
+          </p>
         </div>
       </div>
     </section>
@@ -63,58 +105,91 @@
     <section class="about_banner">
       <div class="container">
         <div class="about_banner_inner">
-          <img src="img/about_logo.png" class="about_banner_img" alt="">
+          <img src="img/about_logo.png" class="about_banner_img" alt="" />
           <div class="about_banner_price">
-            <img src="img/point.png" alt="">
+            <img src="img/point.png" alt="" />
             <p class="about_banner_price_text">Всего за 40 000 тенге</p>
-            <img src="img/point.png" alt="">
+            <img src="img/point.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="conditions">
+    <section class="conditions" id="conditions">
       <div class="container">
         <div class="row">
           <h2 class="conditions_heading col-md-8 offset-md-2">Условия акции</h2>
-          <p class="conditions_text col-md-10 offset-md-1">«Логотип за 4 дня» – это специальное предложение от профессионалов ГЛАВБРЕНД для малого и среднего бизнеса, перспективных и начинающих проектов.</p>
-        </div>
-
-        
-      <div class="conditions_work">
-
-            <img src="img/conditions.png" class="conditions_work_img" alt="">
-            <div class="container">
-              <div class="row">
-            <ul class="conditions_work_list offset-md-6 col-md-6">
-              <h2 class="conditions_work_heading">Порядок работы:</h2>
-              <li class="conditions_work_item">Заполняем и подписываем техзадание</li>
-              <li class="conditions_work_item">Производится оплата и типового договора</li>
-              <li class="conditions_work_item">Сдача 3 вариантов логотипа</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-        <div class="warning">
-          <p>***Важно! Предложенные нами варианты не обсуждаются, все их изменения платные.</p>
-          <p>***Важно! Предложенные нами варианты – сделаны профессионально творческой и опытной командой, потому изменений и не потребуется</p>
+          <p class="conditions_text col-md-10 offset-md-1">
+            «Логотип за 4 дня» – это специальное предложение от профессионалов
+            ГЛАВБРЕНД для малого и среднего бизнеса, перспективных и начинающих
+            проектов.
+          </p>
         </div>
       </div>
 
+        <div class="conditions_work">
+          <div class="container">
+            <div class="conditions_work_inner">
+              <img src="img/conditions.png" class="conditions_work_img" alt="" />
+            
+
+
+                  <ul class="conditions_work_list">
+                    <h2 class="conditions_work_heading">Порядок работы:</h2>
+                    <div class="conditions_work_item_wrapper">
+                      <img src="img/point.png" alt="" />
+                      <li class="conditions_work_item">
+                        Заполняем и подписываем техзадание
+                      </li>
+                    </div>
+                    <div class="conditions_work_item_wrapper">
+                      <img src="img/point.png" alt="" />
+                      <li class="conditions_work_item">
+                        Производится оплата и подписание типового договора
+                      </li>
+                    </div>
+                    <div class="conditions_work_item_wrapper">
+                      <img src="img/point.png" alt="" />
+                      <li class="conditions_work_item">
+                        Сдача 3 вариантов логотипа
+                      </li>
+                    </div>
+                  </ul>
+            </div>
+
+              
+            </div>
+
+        </div>
+        <div class="container">
+              <div class="warning">
+                <p>
+                  ***Важно! Предложенные нами варианты не обсуждаются, все их
+                  изменения платные.
+                </p>
+                <p>
+                  ***Важно! Предложенные нами варианты – сделаны профессионально
+                  творческой и опытной командой, потому изменений и не потребуется
+                </p>
+              </div>
+
+        </div>
+
+      </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio_inner">
           <h2 class="portfolio_heading">Портфолио</h2>
           <p class="portfolio_text">Звоните сегодня!</p>
           <p class="portfolio_text">Работайте с новым лого уже через 4 дня!</p>
-          <img src="img/point.png" alt="" class="portfolio_start_icon">
+          <img src="img/point.png" alt="" class="portfolio_start_icon" />
           <div class="gallery">
-            <img src="img/khan.jpg" alt="">
-            <img src="img/onmilk.jpg" alt="">
-            <img src="img/moscow.jpg" alt="">
-            <img class="last_gallery_img" src="img/build.jpg" alt="">
+            <img src="img/khan.jpg" alt="" />
+            <img src="img/onmilk.jpg" alt="" />
+            <img src="img/moscow.jpg" alt="" />
+            <img class="last_gallery_img" src="img/build.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -122,15 +197,77 @@
 
     <section class="portfolio_logos">
       <div class="container">
-        <img src="img/portfolio_logos.png" alt="">
+        <img src="img/portfolio_logos.png" alt="" />
       </div>
     </section>
 
     <footer class="footer">
-      <p class="mail">glavbrend@inbox.ru</p>
-      <p>проспект Тауке Хана, 2 этаж</p>
-      <p>Аль-Фарабийский район, Шымкент, 160011</p>
-      <p><a href="tel:+77079352216" class="tel">+77079352216</a></p>
+      <div class="container" id="contacts">
+        <p class="mail">glavbrend@inbox.ru</p>
+        <p>проспект Тауке Хана, 63, 2 этаж</p>
+        <p>Шымкент</p>
+        <p><a href="tel:+77079352216" class="tel">+77079352216</a></p>
+      </div>
     </footer>
+
+    <div class="top" id="top">
+      <a href="#header"><?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg class="top_arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 384.923 384.923" style="enable-background:new 0 0 384.923 384.923;" xml:space="preserve">
+        <g>
+          <path id="Arrow_Upward" d="M321.337,122.567L201.046,3.479c-4.776-4.728-12.391-4.547-17.179,0l-120.291,119.1
+            c-4.74,4.704-4.74,12.319,0,17.011c4.752,4.704,12.439,4.704,17.191,0l99.551-98.552v331.856c0,6.641,5.438,12.03,12.151,12.03
+            s12.151-5.39,12.151-12.03V41.025l99.551,98.552c4.74,4.704,12.439,4.704,17.179,0C326.089,134.886,326.089,127.27,321.337,122.567
+            z"/>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        </svg>
+        </a> 
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
